@@ -11,8 +11,8 @@ var onLoad = function() {
  
    // constraints
    {
-      'video': {"mandatory": {}, "optional": []},
-      'audio': true
+      video: false,
+      audio: true
    },
  
    // successCallback
