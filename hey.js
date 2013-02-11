@@ -18,7 +18,7 @@ var onLoad = function() {
    // successCallback
    function(localMediaStream) {
 
-      var localVideo = document.querySelector('localVideo');
+      var localVideo = document.querySelector('#localVideo');
       localVideo.src = window.URL.createObjectURL(localMediaStream);
       localVideo.onloadedmetadata = function(e) {
 
