@@ -20,12 +20,14 @@ var onLoad = function() {
 
       var localVideo = document.querySelector('#localVideo');
       localVideo.src = window.URL.createObjectURL(localMediaStream);
+      /*
       localVideo.onloadedmetadata = function(e) {
 
         console.log("onloadedmetadata handler");
          // handle video
 
       };
+      */
    },
  
    // errorCallback
