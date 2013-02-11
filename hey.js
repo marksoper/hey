@@ -11,17 +11,17 @@ var onLoad = function() {
  
    // constraints
    {
-      video: false,
+      video: true,
       audio: true
    },
  
    // successCallback
    function(localMediaStream) {
-      var audio = document.querySelector('audio');
-      audio.src = window.URL.createObjectURL(localMediaStream);
-      audio.onloadedmetadata = function(e) {
+      var video = document.querySelector('video');
+      video.src = window.URL.createObjectURL(localMediaStream);
+      video.onloadedmetadata = function(e) {
 
-         // handle audio
+         // handle video
 
       };
    },
