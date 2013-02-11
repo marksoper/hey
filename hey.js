@@ -17,10 +17,12 @@ var onLoad = function() {
  
    // successCallback
    function(localMediaStream) {
-      var video = document.querySelector('video');
-      video.src = window.URL.createObjectURL(localMediaStream);
-      video.onloadedmetadata = function(e) {
 
+      var localVideo = document.querySelector('localVideo');
+      localVideo.src = window.URL.createObjectURL(localMediaStream);
+      localVideo.onloadedmetadata = function(e) {
+
+        console.log("onloadedmetadata handler");
          // handle video
 
       };
