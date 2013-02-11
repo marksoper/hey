@@ -20,6 +20,7 @@ var onLoad = function() {
 
       var localVideo = document.querySelector('#localVideo');
       localVideo.src = window.URL.createObjectURL(localMediaStream);
+      localVideo.play();
       /*
       localVideo.onloadedmetadata = function(e) {
 

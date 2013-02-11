@@ -14,5 +14,9 @@ a {
   text-decoration: none;
 }
 
+#localVideo {
+  height: 200px;
+}
+
 
 
